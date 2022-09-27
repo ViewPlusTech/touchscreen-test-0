@@ -7,7 +7,7 @@
   <title>Speech Synthesis on Icons</title>
   
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌙</text></svg>">
-  <script type="module" src="./main.js"></script>
+  <script type="module" src="./speechMain.js"></script>
   <link rel="stylesheet" href="./style.css">
   
 </head>
@@ -18,9 +18,11 @@
   <main>
     <p>Hover over an icon to hear the label.</p>
     <svg id="icon-targets" viewBox="0 0 200 280">
-      <circle id="circle-icon" cx="100" cy="50" r="20" aria-label="Circle" />
+      <circle id="circle-icon-desc" cx="100" cy="50" r="15" aria-label="Circle" data-describe="true" />
+      <circle id="circle-icon" cx="30" cy="50" r="20" aria-label="Circle" />
       <rect id="rectangle-icon" x="30" y="100" width="40" height="60" aria-label="Rectangle" />
-      <polygon id="triangle-icon" points="150,200 173,240 127,240" aria-label="Triangle" />
+      <rect id="rectangle-icon-desc" x="100" y="210" width="50" height="20" aria-label="Rectangle" data-describe="true" />
+      <polygon id="triangle-icon" points="150,200 173,240 127,240" aria-label="Triangle" data-describe="true" />
     </svg>
   </main>
 </body>
