@@ -47,14 +47,16 @@
    */
   speak() {
     if (this.synth.speaking) {
-      console.error('error: speechSynthesis.speaking');
-      return;
+      console.warn('warning: still speaking');
+      this.synth.cancel();
+      // return;
     }
 
     // console.log('utterance', this.utterance);
     if (this.utterance) {
       this.utterance.onend = (event) => {
         console.log('SpeechSynthesisUtterance.onend');
+        // this.synth.speak(new SpeechSynthesisUtterance('done!'));
         // this.utterance = null;
       };
 
