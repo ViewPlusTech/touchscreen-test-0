@@ -6,6 +6,7 @@
   --lime_green: hsl(63, 88%, 46%);
   --sky_blue: hsl(182, 67%, 75%);
   --coral_pink: hsl(358, 100%, 73%);
+  --dark_coral: hsl(358, 100%, 33%);
   --fresh_green: hsl(78, 100%, 37%);
   --marine_turquoise: hsl(176, 82%, 38%);
   --royal_purple: hsl(312, 100%, 31%);
@@ -51,10 +52,20 @@ svg {
   fill: var(--coral_pink);
 }
 
+#circle-icon-desc {
+  fill: var(--coral_pink);
+  stroke: var(--dark_coral);
+}
+
 #rectangle-icon {
   fill: var(--fresh_green);
 }
 
 #triangle-icon {
   fill: var(--royal_purple);
+}
+
+#rectangle-icon-desc {
+  fill: var(--marine_turquoise);
+  stroke: var(--grass_green);
 }
